@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Rubik', sans-serif;
+}
+
+.container-fluid {
+    width: 100% ; 
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,50,0.8), rgba(0,0,50,0.8)), url(background-image.png);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+.form-container {
+    width: 90%;
+    max-width: 450px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #fafafa;
+    padding: 50px 60px 60px;
+    text-align: center;
+}
+
+.form-control {
+    background: #fff;
+}
+
+.form-control:focus {
+    border-color: #3c00a0;
+    box-shadow: 0 0 0 0.25rem rgba(60, 0, 160, 0.25);
+}
+
+h1 {
+    font-size: 35px;
+    color: #3c00a0;
+    position: relative;
+    font-weight: bold;
+}
+
+h1::after {
+    content: '';
+    width: 30px;
+    height: 4px;
+    border-radius: 3px;
+    background: #3c00a0;
+    position: absolute;
+    bottom: -12px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.form-text, .invalid-feedback {
+    text-align: left;
+}
+
+.form-text a {
+    text-decoration: none;
+    color: #310080;
+    font-size: 11px;
+    font-weight: 500;
+}
+
+.btn-primary {
+    background: #3c00a0;
+    color: #fff;
+    border: 0;
+}
+
+.btn-primary:hover {
+    background: #310080;
+    color: #fff;
+}
+
+.btn-primary:active {
+    background: #310080 !important;
+    color: #fff !important;
+    transform: scale(0.97) !important;
+}
+
+@media (max-width: 500px) {
+    .form-container {
+        width: 100%;
+        max-width: 360px;
+        padding: 35px 40px 45px;
+    }
+}
+
+
